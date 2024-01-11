@@ -29,5 +29,12 @@ public class Main {
             System.out.println(obj);
         }
 
+        System.out.println();
+        System.out.println("=== Test 3: Seller findAll ===");
+        List<Seller> list2 = sellerDAO.findAll();
+        for (Seller obj : list2){
+            System.out.println(obj);
+        }
+
     }
 }
