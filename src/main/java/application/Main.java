@@ -36,5 +36,12 @@ public class Main {
             System.out.println(obj);
         }
 
+        System.out.println();
+        System.out.println("=== Test 4: Seller insert  ===");
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail",new Date(), 4000.00, department);
+        sellerDAO.insert(newSeller);
+        System.out.println("Inserted! New id = " + newSeller.getId());
+
+
     }
 }
