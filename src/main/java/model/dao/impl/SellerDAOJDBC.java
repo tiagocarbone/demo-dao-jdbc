@@ -94,6 +94,10 @@ public class SellerDAOJDBC implements SellerDAO {
 
             st.setInt(1, id);
             st.executeUpdate();
+
+            st.executeUpdate();
+
+
         } catch (SQLException e){
             throw new DbException(e.getMessage());
         } finally {
